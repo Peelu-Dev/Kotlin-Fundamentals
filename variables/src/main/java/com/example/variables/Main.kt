@@ -21,6 +21,16 @@ fun main(){
     println("Float number is: $piFloat")
     println("Double number is: $piDouble")
 
+    // Kotlin operators
+    val a = 12
+    val b = 56
+    val c = 45.0
+    val d = 7.0
+    println(a+b)
+    println(a-b)
+    println(a*b)
+    println(c/d)
+    println(c%d)
 
 
 }
