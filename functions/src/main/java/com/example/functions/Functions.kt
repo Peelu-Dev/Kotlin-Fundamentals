@@ -2,8 +2,11 @@ package com.example.functions
 
 fun main(){
 // sayHelloWithParameters( message = "is a multiple of", multipleOf = 7)
+//    val catAge = calculateCatAge(12)
+//    println("Cat Age is $catAge")
     val catAge = calculateCatAge(12)
     println("Cat Age is $catAge")
+
 }
 //fun sayHello(){
 //    for(i in 1..10){
@@ -19,6 +22,9 @@ fun main(){
 //    }
 //}
 
-fun calculateCatAge(age:Int):Int{
-    return age * 5
-}
+//fun calculateCatAge(age:Int):Int{
+//    return age * 5
+//}
+
+// Lambda function
+val calculateCatAge : (Int) -> Int = {a -> a * 5}
