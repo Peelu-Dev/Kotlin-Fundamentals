@@ -16,3 +16,4 @@ rootProject.name = "Kotlin Fundamentals"
 include ':app'
 include ':variables'
 include ':app:loopsandconditionalstatements'
+include ':functions'
