@@ -1,7 +1,7 @@
 package com.example.functions
 
 fun main(){
- sayHelloWithParameters(1,200,6)
+ sayHelloWithParameters( message = "is a multiple of", multipleOf = 7)
 }
 //fun sayHello(){
 //    for(i in 1..10){
@@ -9,10 +9,10 @@ fun main(){
 //    }
 //}
 
-fun sayHelloWithParameters(first:Int,second:Int,multipleOf:Int){
+fun sayHelloWithParameters(first:Int=9,second:Int=90,message:String,multipleOf:Int){
     for(i in first..second){
         if(i % multipleOf == 0){
-            println("$i is a multiple of $multipleOf")
+            println("$i $message $multipleOf")
         }
     }
 }
