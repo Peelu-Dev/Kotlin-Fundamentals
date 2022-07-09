@@ -9,6 +9,8 @@ fun main(){
     println(numbers)
     numbers.remove(56)
     println(numbers)
+    println("Size of numbers list is: ${numbers.size}}" )
+    println("first element of numbers list is: ${numbers[1]}")
     friends.forEach {
         println(it)
     }
