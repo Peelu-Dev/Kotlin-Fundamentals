@@ -4,12 +4,15 @@ fun main(){
     val car = Car(color = "Black", model = "XUV100")
     val secondCar = Car(color = "Red", model = "Ferrari")
     println("Car Color is: ${car.color} and Car model is: ${car.model}" )
-    println("Car Color is: ${secondCar.color} and Car model is: ${secondCar.model}" )
+    println("secondCar Color is: ${secondCar.color} and secondCar model is: ${secondCar.model}" )
     println(car.drive())
 }
 
-class Car(var color : String = "Blue", var model:String = "BMW"){
-
+class Car(var color : String , var model:String){
+//    init {
+//        color = "Red"
+//        model = "XUV800"
+//    }
     fun drive(){
         println("Driving...")
     }
