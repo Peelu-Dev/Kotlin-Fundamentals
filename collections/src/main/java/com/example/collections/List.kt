@@ -35,4 +35,11 @@ fun main() {
 //    val EmptyList = emptyList<String>()
 //    val EmptySet = emptySet<Int>()
 //    val EmptyMap = emptyMap<String,Int>()
+
+    // Collections filters
+    val myListOfNames = listOf("Peelu","Hurray","Pinku","Pasta")
+    val found = myListOfNames.filter {
+        it.startsWith("P",ignoreCase = true) && it.endsWith("u")
+    }
+    println(found)
 }
