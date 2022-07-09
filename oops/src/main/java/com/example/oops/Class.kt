@@ -7,18 +7,30 @@ fun main(){
     println("secondCar Color is: ${secondCar.color} and secondCar model : ${secondCar.model}" )
     car.speed(minSpeed = 100, maxSpeed = 300)
     println(car.drive())
+    val truck = Truck()
+    truck.speed(100,200)
+    truck.drive()
 }
 
-class Car(var color : String , var model:String){
+class Truck:Car(color = "Red","Hyundai"){
+    override fun speed(minSpeed: Int, maxSpeed: Int) {
+        println("Minimum speed of the truck is: $minSpeed and maximum speed of the truck is: $maxSpeed")
+    }
+    override fun drive() {
+        println("Truck is Driving...")
+    }
+}
+
+open class Car(var color : String , var model:String){
 //    init {
 //        color = "Red"
 //        model = "XUV800"
 //    }
 
-    fun speed( minSpeed : Int, maxSpeed:Int){
+    open fun speed( minSpeed : Int, maxSpeed:Int){
        println("Minimum speed is: $minSpeed and maximum speed is: $maxSpeed")
     }
-    fun drive(){
+    open fun drive(){
         println("Driving...")
     }
 }
