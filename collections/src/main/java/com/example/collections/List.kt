@@ -16,18 +16,23 @@ fun main() {
 //        println(it)
 //}
         // Sets
-        val mySet = setOf("US","UK","AU","IND","SL")
-        println(mySet)
-        val myMutableSet = mutableSetOf(10,56,89,97)
-        println(myMutableSet)
-        myMutableSet.add(89)
-        println(myMutableSet)
+//        val mySet = setOf("US","UK","AU","IND","SL")
+//        println(mySet)
+//        val myMutableSet = mutableSetOf(10,56,89,97)
+//        println(myMutableSet)
+//        myMutableSet.add(89)
+//        println(myMutableSet)
+//
+//        // Maps
+//        val myMap = mapOf("Up" to 1, "Down" to 2, "Left" to 3, "Right" to 4)
+//        println(myMap)
+//
+//        val myMutableMap = mutableMapOf("Hello" to 5, "Bye" to 6, "Bro" to 7)
+//        myMutableMap["cool"] = 8
+//        println(myMutableMap)
 
-        // Maps
-        val myMap = mapOf("Up" to 1, "Down" to 2, "Left" to 3, "Right" to 4)
-        println(myMap)
-
-        val myMutableMap = mutableMapOf("Hello" to 5, "Bye" to 6, "Bro" to 7)
-        myMutableMap["cool"] = 8
-        println(myMutableMap)
+    // Empty Collections
+//    val EmptyList = emptyList<String>()
+//    val EmptySet = emptySet<Int>()
+//    val EmptyMap = emptyMap<String,Int>()
 }
