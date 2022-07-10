@@ -22,9 +22,6 @@ fun getResult(result: Result){
         is NotLoading -> {
             println("Not Loading...")
         }
-        else -> {
-            println("N/A")
-        }
     }
 }
 
@@ -46,7 +43,7 @@ object Repository{
         return loadState
     }
 }
-abstract class Result
+sealed class Result
 
 data class Success(val dataFetched: String?):Result()
 data class Error(val exception:Exception):Result()
